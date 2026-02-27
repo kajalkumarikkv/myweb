@@ -155,39 +155,18 @@
         </tr>
         <tr>
       </table>
-      <form onsubmit="showData(event)">
+<title>Form Show Data</title>
+<h2>Contact Form</h2>
+      <form>
         <label>Email: <input type="text" name="email"></label><br>
         <label> Mobile: <input type="text" name="mobile"> </label><br>
-        <textarea name="comments" rows="4">Enter your message</textarea><br>
-        <input type="submit" value="Submit" /><br>
+        <textarea id="message" rows="4">>Enter your message</textarea><br>
+        <input type="submit" value="Submit">
       </form>
-      <div id="result" style="margin-top:20px; color:green;"></div>
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Form Show Data</title>
-</head>
-<body>
-
-<h2>Contact Form</h2>
-
-<form>
-  <label>Email:</label>
-  <input type="text" id="email"><br><br>
-
-  <label>Mobile:</label>
-  <input type="text" id="mobile"><br><br>
-
-  <label>Message:</label><br>
-  <textarea id="message" rows="4"></textarea><br><br>
-
-  <input type="submit" value="Submit">
-</form>
-
-<script>
-function showData(event) {
-    event.preventDefault();
+    <script>
+      function showData(event) {
+        event.preventDefault();
 
     var email = document.getElementById("email").value;
     var mobile = document.getElementById("mobile").value;
