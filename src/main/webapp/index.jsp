@@ -155,12 +155,13 @@
         </tr>
         <tr>
       </table>
-      <form>
+      <form onsubmit="showData(event)">
         <label>Email: <input type="text" name="email"></label><br>
         <label> Mobile: <input type="text" name="mobile"> </label><br>
         <textarea name="comments" rows="4">Enter your message</textarea><br>
         <input type="submit" value="Submit" /><br>
       </form>
+      <div id="result" style="margin-top:20px; color:green;"></div>
     </main>
     <footer class="footer">&copy; Copyright Mr. Camel</footer>
   </div>
