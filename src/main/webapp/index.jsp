@@ -162,6 +162,47 @@
         <input type="submit" value="Submit" /><br>
       </form>
       <div id="result" style="margin-top:20px; color:green;"></div>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Show Data</title>
+</head>
+<body>
+
+<h2>Contact Form</h2>
+
+<form>
+  <label>Email:</label>
+  <input type="text" id="email"><br><br>
+
+  <label>Mobile:</label>
+  <input type="text" id="mobile"><br><br>
+
+  <label>Message:</label><br>
+  <textarea id="message" rows="4"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function showData(event) {
+    event.preventDefault();
+
+    var email = document.getElementById("email").value;
+    var mobile = document.getElementById("mobile").value;
+    var message = document.getElementById("message").value;
+
+    document.getElementById("result").innerHTML =
+        "<h3>Submitted Details</h3>" +
+        "Email: " + email + "<br>" +
+        "Mobile: " + mobile + "<br>" +
+        "Message: " + message;
+}
+</script>
+
+</body>
+</html>
     </main>
     <footer class="footer">&copy; Copyright Mr. Camel</footer>
   </div>
